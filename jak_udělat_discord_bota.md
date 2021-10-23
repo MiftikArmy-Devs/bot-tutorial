@@ -10,7 +10,7 @@ const client = new miftcmd({
 })
 
 
-tady na tom místě budeš psát příkazy které uvidíš v dalších odstavcích
+// tady na tom místě budeš psát příkazy které uvidíš v dalších odstavcích
 
 
 // pokud chceš před-udělaný help příkaz
@@ -28,7 +28,7 @@ client.log(process.env.token)
 // Jdeme udělat příkaz ?ahoj který odpoví "AHOJ!"
 client.command("ahoj", {
   execute({message}) => {
-    message.reply("AHOJ!", true) // true = žádný ping, false = s pingem
+    message.reply("AHOJ!", true) // pokud tam bude **true** tak ti to odpoví na správu '?ahoj' a pakud tam bude false tak to neodpoví
   }
 })
 ```
